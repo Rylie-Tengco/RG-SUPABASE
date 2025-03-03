@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Supabase library is not loaded. Please include it before this script.');
         return;
     }
-    
+
     const { createClient } = supabase;
     const supabaseClient = createClient(
         'https://xiopytnqzutiixdgqxln.supabase.co',

@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="This is RG Scaffolding's e-commerce website.">
-        <meta name="keywords" content="scaffolding, scaffold rental, scaffold sale, scaffolding services">
-        <meta name="author" content="Rhundei Zen Ballesteros, Mariel Gravidez, Julian Rylie Tengco">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is RG Scaffolding's e-commerce website.">
+    <meta name="keywords" content="scaffolding, scaffold rental, scaffold sale, scaffolding services">
+    <meta name="author" content="Rhundei Zen Ballesteros, Mariel Gravidez, Julian Rylie Tengco">
 
-        <title>Owner Login | RG Scaffolding</title>
+    <title>Owner Login | RG Scaffolding</title>
 
-        <link rel="icon" href="images/rgscaffolding-logo-32px.png" type="image/png">
-        
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/login.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    </head>
+    <link rel="icon" href="images/rgscaffolding-logo-32px.png" type="image/png">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
 
 <body>
     <div class="login-container">
@@ -30,7 +30,7 @@
             <form id="ownerLoginForm" onsubmit="return handleOwnerLogin(event)">
                 <h2>Owner Access</h2>
                 <p class="login-subtitle">Please enter your credentials to continue</p>
-                
+
                 <div class="form-group">
                     <label for="email">Email Address</label>
                     <input type="email" id="email" name="email" required placeholder="Enter your email">
@@ -47,7 +47,10 @@
             </div>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
     <script src="js/main.js"></script>
     <script src="js/owner-auth.js"></script>
 </body>
+
 </html>
