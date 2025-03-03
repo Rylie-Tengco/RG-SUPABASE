@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="This is RG Scaffolding's e-commerce website.">
-        <meta name="keywords" content="scaffolding, scaffold rental, scaffold sale, scaffolding services">
-        <meta name="author" content="Rhundei Zen Ballesteros, Mariel Gravidez, Julian Rylie Tengco">
-    
-        <title>Customer Login | RG Scaffolding</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is RG Scaffolding's e-commerce website.">
+    <meta name="keywords" content="scaffolding, scaffold rental, scaffold sale, scaffolding services">
+    <meta name="author" content="Rhundei Zen Ballesteros, Mariel Gravidez, Julian Rylie Tengco">
 
-        <link rel="icon" href="images/rgscaffolding-logo-32px.png" type="image/png">
-        
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/login.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    </head>
+    <title>Customer Login | RG Scaffolding</title>
+
+    <link rel="icon" href="images/rgscaffolding-logo-32px.png" type="image/png">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
 
 <body>
     <div class="login-container">
@@ -31,7 +31,7 @@
                 <button class="tab-btn active" onclick="switchTab('login')">Login</button>
                 <button class="tab-btn" onclick="switchTab('signup')">Sign Up</button>
             </div>
-            
+
             <form id="loginForm" class="form-section active" onsubmit="return handleLogin(event)">
                 <h2>Welcome back!</h2>
                 <div class="form-group">
@@ -40,7 +40,8 @@
                 </div>
                 <div class="form-group">
                     <label for="loginPassword">Password</label>
-                    <input type="password" id="loginPassword" name="password" required placeholder="Enter your password">
+                    <input type="password" id="loginPassword" name="password" required
+                        placeholder="Enter your password">
                 </div>
                 <button type="submit" class="login-button">Sign In</button>
             </form>
@@ -65,7 +66,8 @@
                 </div>
                 <div class="form-group">
                     <label for="signupAddress">Address</label>
-                    <textarea id="signupAddress" name="address" required placeholder="Enter your complete address"></textarea>
+                    <textarea id="signupAddress" name="address" required
+                        placeholder="Enter your complete address"></textarea>
                 </div>
                 <button type="submit" class="login-button">Create Account</button>
             </form>
@@ -75,8 +77,10 @@
             </div>
         </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
     <script src="js/main.js"></script>
     <script src="js/customer-auth.js"></script>
 </body>
+
 </html>
